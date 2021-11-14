@@ -1,0 +1,149 @@
+
+$primaryColor:#267163;
+$maskColor:#e9f5ff;
+$maskColorTwo:#F1EBE3;
+$blue:#2D79AE;
+$bgColor:#F0F0F0;
+
+
+.bg-primaryColor{
+    background-color: $primaryColor;
+}
+
+.bg-bgColor{
+    background-color: $bgColor;
+}
+
+.bg-masked{
+    background-color: $maskColor;
+}
+
+.bg-maskedTwo{
+    background-color: $maskColorTwo;
+}
+
+.maskedSpecial{
+    background-size: 100% 50%;
+    background-position: 50% 50%
+}
+
+.txt-primaryColor{
+    color: $primaryColor;
+}
+
+.txt-blue{
+    color: $blue;
+}
+
+.border-primaryColor{
+    border-color: $primaryColor!important;
+}
+
+.hover-shadow{
+    transition: all 0.3s ease-in-out;
+
+    &:hover{
+        cursor: pointer;
+        box-shadow: -1px 0px 21px 1px rgba(0,0,0,0.31);
+        -webkit-box-shadow: -1px 0px 21px 1px rgba(0,0,0,0.31);
+        -moz-box-shadow: -1px 0px 21px 1px rgba(0,0,0,0.31);
+    }
+}
+
+figure.square-img{
+    margin: auto;
+    width: 100px;
+    height: 100px;
+    img{
+        object-fit: cover;
+    }
+}
+
+
+figure.img-50px{
+    width: 50px;
+    height: 50px;
+}
+
+img.img-50px{
+    width: 25px;
+    height: 25px;
+}
+
+
+figure.hover-play{
+    span{
+        display: block;
+        transition: display 0.3s ease-out;
+    }
+
+    &:hover span{
+        display: none;
+        
+
+   }
+  
+
+}
+
+ul.pagination{
+    li.active a{
+        background-color: #ccc!important;
+        border-color: #ccc!important;
+        outline: none;
+    }
+}
+
+
+nav{
+    background-color: $primaryColor;
+}
+
+img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+body{
+    max-width: 1920px;
+    margin: auto;
+}
+
+
+// INDEX PAGE
+
+#homeMultimediaCarousel, #singlePageCarousel{
+    ul.slick-dots{
+        margin: 0;
+        padding: 0;
+        display: flex;
+        width: 25%;
+        margin: auto;
+      
+
+        li{
+            margin: auto;
+
+            button{
+                display: none;
+            }
+        }
+
+       
+    }
+}
+
+
+// STICKY NAV
+#stickyNav{
+    .navbar{
+        overflow-x: scroll;
+        &::-webkit-scrollbar{
+            display: none;
+        }
+    }
+
+   
+}
+
